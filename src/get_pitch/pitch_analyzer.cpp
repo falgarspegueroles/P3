@@ -12,6 +12,13 @@ namespace upc {
 
     for (unsigned int l = 0; l < r.size(); ++l) {
   		/// \TODO Compute the autocorrelation r[l]
+      /// \FET Autocorrelació calculada amb el següent alsgorisme
+      /// - Inicialitzem autocorrelació a 0
+      /// - Acumulem el producte creuat
+      /// - Dividim el nombre de mostres
+      /// \f[
+      /// \frac{1}{N}\sum_{i=0}^{N}x[1]x^*[1-m]
+      /// \f]
     }
 
     if (r[0] == 0.0F) //to avoid log() and divide zero 
